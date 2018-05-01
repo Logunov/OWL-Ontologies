@@ -1,0 +1,559 @@
+{
+  "@context" : {
+    "QualitativeValue" : {
+      "@id" : "http://purl.org/goodrelations/v1#QualitativeValue"
+    },
+    "hasNAICS" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasNAICS",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "eligibleDuration" : {
+      "@id" : "http://purl.org/goodrelations/v1#eligibleDuration",
+      "@type" : "@id"
+    },
+    "isVariantOf" : {
+      "@id" : "http://purl.org/goodrelations/v1#isVariantOf",
+      "@type" : "@id"
+    },
+    "hasCurrencyValue" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasCurrencyValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "BusinessFunction" : {
+      "@id" : "http://purl.org/goodrelations/v1#BusinessFunction"
+    },
+    "BusinessEntity" : {
+      "@id" : "http://purl.org/goodrelations/v1#BusinessEntity"
+    },
+    "hasManufacturer" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasManufacturer",
+      "@type" : "@id"
+    },
+    "availabilityEnds" : {
+      "@id" : "http://purl.org/goodrelations/v1#availabilityEnds",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "amountOfThisGood" : {
+      "@id" : "http://purl.org/goodrelations/v1#amountOfThisGood",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "DeliveryChargeSpecification" : {
+      "@id" : "http://purl.org/goodrelations/v1#DeliveryChargeSpecification"
+    },
+    "ProductOrService" : {
+      "@id" : "http://purl.org/goodrelations/v1#ProductOrService"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "QuantitativeValueFloat" : {
+      "@id" : "http://purl.org/goodrelations/v1#QuantitativeValueFloat"
+    },
+    "validFrom" : {
+      "@id" : "http://purl.org/goodrelations/v1#validFrom",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "includes" : {
+      "@id" : "http://purl.org/goodrelations/v1#includes",
+      "@type" : "@id"
+    },
+    "width" : {
+      "@id" : "http://purl.org/goodrelations/v1#width",
+      "@type" : "@id"
+    },
+    "hasUnitOfMeasurement" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasUnitOfMeasurement",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isListPrice" : {
+      "@id" : "http://purl.org/goodrelations/v1#isListPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "availableAtOrFrom" : {
+      "@id" : "http://purl.org/goodrelations/v1#availableAtOrFrom",
+      "@type" : "@id"
+    },
+    "hasMinValueInteger" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasMinValueInteger",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "isSimilarTo" : {
+      "@id" : "http://purl.org/goodrelations/v1#isSimilarTo",
+      "@type" : "@id"
+    },
+    "validThrough" : {
+      "@id" : "http://purl.org/goodrelations/v1#validThrough",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "valueReference" : {
+      "@id" : "http://purl.org/goodrelations/v1#valueReference",
+      "@type" : "@id"
+    },
+    "DayOfWeek" : {
+      "@id" : "http://purl.org/goodrelations/v1#DayOfWeek"
+    },
+    "eligibleCustomerTypes" : {
+      "@id" : "http://purl.org/goodrelations/v1#eligibleCustomerTypes",
+      "@type" : "@id"
+    },
+    "Organization" : {
+      "@id" : "http://schema.org/Organization"
+    },
+    "SomeItems" : {
+      "@id" : "http://purl.org/goodrelations/v1#SomeItems"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "appliesToPaymentMethod" : {
+      "@id" : "http://purl.org/goodrelations/v1#appliesToPaymentMethod",
+      "@type" : "@id"
+    },
+    "Product" : {
+      "@id" : "http://schema.org/Product"
+    },
+    "height" : {
+      "@id" : "http://purl.org/goodrelations/v1#height",
+      "@type" : "@id"
+    },
+    "hasMaxCurrencyValue" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasMaxCurrencyValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ActualProductOrServiceInstance" : {
+      "@id" : "http://purl.org/goodrelations/v1#ActualProductOrServiceInstance"
+    },
+    "ProductOrServiceModel" : {
+      "@id" : "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+    },
+    "Offer" : {
+      "@id" : "http://schema.org/Offer"
+    },
+    "PaymentChargeSpecification" : {
+      "@id" : "http://purl.org/goodrelations/v1#PaymentChargeSpecification"
+    },
+    "quantitativeProductOrServiceProperty" : {
+      "@id" : "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty",
+      "@type" : "@id"
+    },
+    "depiction" : {
+      "@id" : "http://xmlns.com/foaf/0.1/depiction",
+      "@type" : "@id"
+    },
+    "hasValue" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasValue",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "PaymentMethod" : {
+      "@id" : "http://purl.org/goodrelations/v1#PaymentMethod"
+    },
+    "hasEAN_UCC-13" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasEAN_UCC-13",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "BusinessEntityType" : {
+      "@id" : "http://purl.org/goodrelations/v1#BusinessEntityType"
+    },
+    "acceptedPaymentMethods" : {
+      "@id" : "http://purl.org/goodrelations/v1#acceptedPaymentMethods",
+      "@type" : "@id"
+    },
+    "image" : {
+      "@id" : "http://schema.org/image",
+      "@type" : "@id"
+    },
+    "successorOf" : {
+      "@id" : "http://purl.org/goodrelations/v1#successorOf",
+      "@type" : "@id"
+    },
+    "hasCurrency" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasCurrency",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "seeks" : {
+      "@id" : "http://purl.org/goodrelations/v1#seeks",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "productID" : {
+      "@id" : "http://schema.org/productID"
+    },
+    "ProductOrServicesSomeInstancesPlaceholder" : {
+      "@id" : "http://purl.org/goodrelations/v1#ProductOrServicesSomeInstancesPlaceholder"
+    },
+    "manufacturer" : {
+      "@id" : "http://schema.org/manufacturer",
+      "@type" : "@id"
+    },
+    "hasGTIN-8" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasGTIN-8",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Location" : {
+      "@id" : "http://purl.org/goodrelations/v1#Location"
+    },
+    "hasValueInteger" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasValueInteger",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "nonEqual" : {
+      "@id" : "http://purl.org/goodrelations/v1#nonEqual",
+      "@type" : "@id"
+    },
+    "hasOpeningHoursSpecification" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasOpeningHoursSpecification",
+      "@type" : "@id"
+    },
+    "UnitPriceSpecification" : {
+      "@id" : "http://purl.org/goodrelations/v1#UnitPriceSpecification"
+    },
+    "taxID" : {
+      "@id" : "http://purl.org/goodrelations/v1#taxID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage"
+    },
+    "condition" : {
+      "@id" : "http://purl.org/goodrelations/v1#condition",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasMinCurrencyValue" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasMinCurrencyValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "PaymentMethodCreditCard" : {
+      "@id" : "http://purl.org/goodrelations/v1#PaymentMethodCreditCard"
+    },
+    "isAccessoryOrSparePartFor" : {
+      "@id" : "http://purl.org/goodrelations/v1#isAccessoryOrSparePartFor",
+      "@type" : "@id"
+    },
+    "Offering" : {
+      "@id" : "http://purl.org/goodrelations/v1#Offering"
+    },
+    "opens" : {
+      "@id" : "http://purl.org/goodrelations/v1#opens",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "vatID" : {
+      "@id" : "http://purl.org/goodrelations/v1#vatID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasValueFloat" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasValueFloat",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "hasPrevious" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasPrevious",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://schema.org/Person"
+    },
+    "datatypeProductOrServiceProperty" : {
+      "@id" : "http://purl.org/goodrelations/v1#datatypeProductOrServiceProperty",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "greater" : {
+      "@id" : "http://purl.org/goodrelations/v1#greater",
+      "@type" : "@id"
+    },
+    "durationOfWarrantyInMonths" : {
+      "@id" : "http://purl.org/goodrelations/v1#durationOfWarrantyInMonths",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "greaterOrEqual" : {
+      "@id" : "http://purl.org/goodrelations/v1#greaterOrEqual",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "WarrantyPromise" : {
+      "@id" : "http://purl.org/goodrelations/v1#WarrantyPromise"
+    },
+    "name" : {
+      "@id" : "http://purl.org/goodrelations/v1#name",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Individual" : {
+      "@id" : "http://purl.org/goodrelations/v1#Individual"
+    },
+    "hasISICv4" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasISICv4",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "hasMaxValue" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasMaxValue",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "eligibleRegions" : {
+      "@id" : "http://purl.org/goodrelations/v1#eligibleRegions",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMaxValueFloat" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasMaxValueFloat",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "addOn" : {
+      "@id" : "http://purl.org/goodrelations/v1#addOn",
+      "@type" : "@id"
+    },
+    "hasGTIN-14" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasGTIN-14",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "DeliveryMethod" : {
+      "@id" : "http://purl.org/goodrelations/v1#DeliveryMethod"
+    },
+    "hasInventoryLevel" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasInventoryLevel",
+      "@type" : "@id"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "subject" : {
+      "@id" : "http://purl.org/dc/elements/1.1/subject"
+    },
+    "includesObject" : {
+      "@id" : "http://purl.org/goodrelations/v1#includesObject",
+      "@type" : "@id"
+    },
+    "hasStockKeepingUnit" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasStockKeepingUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNext" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasNext",
+      "@type" : "@id"
+    },
+    "valueAddedTaxIncluded" : {
+      "@id" : "http://purl.org/goodrelations/v1#valueAddedTaxIncluded",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "priceType" : {
+      "@id" : "http://purl.org/goodrelations/v1#priceType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Place" : {
+      "@id" : "http://schema.org/Place"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "hasMPN" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasMPN",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "displayPosition" : {
+      "@id" : "http://purl.org/goodrelations/v1#displayPosition"
+    },
+    "LocationOfSalesOrServiceProvisioning" : {
+      "@id" : "http://purl.org/goodrelations/v1#LocationOfSalesOrServiceProvisioning"
+    },
+    "qualitativeProductOrServiceProperty" : {
+      "@id" : "http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "hasPOS" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasPOS",
+      "@type" : "@id"
+    },
+    "availabilityStarts" : {
+      "@id" : "http://purl.org/goodrelations/v1#availabilityStarts",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasMinValueFloat" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasMinValueFloat",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "hasWarrantyPromise" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasWarrantyPromise",
+      "@type" : "@id"
+    },
+    "hasWarrantyScope" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasWarrantyScope",
+      "@type" : "@id"
+    },
+    "deliveryLeadTime" : {
+      "@id" : "http://purl.org/goodrelations/v1#deliveryLeadTime",
+      "@type" : "@id"
+    },
+    "typeOfGood" : {
+      "@id" : "http://purl.org/goodrelations/v1#typeOfGood",
+      "@type" : "@id"
+    },
+    "hasDUNS" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasDUNS",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "availableDeliveryMethods" : {
+      "@id" : "http://purl.org/goodrelations/v1#availableDeliveryMethods",
+      "@type" : "@id"
+    },
+    "depth" : {
+      "@id" : "http://purl.org/goodrelations/v1#depth",
+      "@type" : "@id"
+    },
+    "OpeningHoursSpecification" : {
+      "@id" : "http://purl.org/goodrelations/v1#OpeningHoursSpecification"
+    },
+    "legalName" : {
+      "@id" : "http://purl.org/goodrelations/v1#legalName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "QuantitativeValue" : {
+      "@id" : "http://purl.org/goodrelations/v1#QuantitativeValue"
+    },
+    "DeliveryModeParcelService" : {
+      "@id" : "http://purl.org/goodrelations/v1#DeliveryModeParcelService"
+    },
+    "hasOpeningHoursDayOfWeek" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek",
+      "@type" : "@id"
+    },
+    "QuantitativeValueInteger" : {
+      "@id" : "http://purl.org/goodrelations/v1#QuantitativeValueInteger"
+    },
+    "relatedWebService" : {
+      "@id" : "http://purl.org/goodrelations/v1#relatedWebService"
+    },
+    "eligibleTransactionVolume" : {
+      "@id" : "http://purl.org/goodrelations/v1#eligibleTransactionVolume",
+      "@type" : "@id"
+    },
+    "PriceSpecification" : {
+      "@id" : "http://purl.org/goodrelations/v1#PriceSpecification"
+    },
+    "hasMaxValueInteger" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasMaxValueInteger",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "category" : {
+      "@id" : "http://purl.org/goodrelations/v1#category",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasMakeAndModel" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasMakeAndModel",
+      "@type" : "@id"
+    },
+    "hasMinValue" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasMinValue",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasPriceSpecification" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasPriceSpecification",
+      "@type" : "@id"
+    },
+    "lesser" : {
+      "@id" : "http://purl.org/goodrelations/v1#lesser",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasEligibleQuantity" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasEligibleQuantity",
+      "@type" : "@id"
+    },
+    "License" : {
+      "@id" : "http://purl.org/goodrelations/v1#License"
+    },
+    "equal" : {
+      "@id" : "http://purl.org/goodrelations/v1#equal",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "lesserOrEqual" : {
+      "@id" : "http://purl.org/goodrelations/v1#lesserOrEqual",
+      "@type" : "@id"
+    },
+    "TypeAndQuantityNode" : {
+      "@id" : "http://purl.org/goodrelations/v1#TypeAndQuantityNode"
+    },
+    "hasBrand" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasBrand",
+      "@type" : "@id"
+    },
+    "owns" : {
+      "@id" : "http://purl.org/goodrelations/v1#owns",
+      "@type" : "@id"
+    },
+    "hasGlobalLocationNumber" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasGlobalLocationNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Brand" : {
+      "@id" : "http://purl.org/goodrelations/v1#Brand"
+    },
+    "appliesToDeliveryMethod" : {
+      "@id" : "http://purl.org/goodrelations/v1#appliesToDeliveryMethod",
+      "@type" : "@id"
+    },
+    "color" : {
+      "@id" : "http://purl.org/goodrelations/v1#color",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "serialNumber" : {
+      "@id" : "http://purl.org/goodrelations/v1#serialNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasBusinessFunction" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasBusinessFunction",
+      "@type" : "@id"
+    },
+    "billingIncrement" : {
+      "@id" : "http://purl.org/goodrelations/v1#billingIncrement",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "advanceBookingRequirement" : {
+      "@id" : "http://purl.org/goodrelations/v1#advanceBookingRequirement",
+      "@type" : "@id"
+    },
+    "predecessorOf" : {
+      "@id" : "http://purl.org/goodrelations/v1#predecessorOf",
+      "@type" : "@id"
+    },
+    "WarrantyScope" : {
+      "@id" : "http://purl.org/goodrelations/v1#WarrantyScope"
+    },
+    "weight" : {
+      "@id" : "http://purl.org/goodrelations/v1#weight",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/goodrelations/v1#description",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "N-Ary-Relations" : {
+      "@id" : "http://purl.org/goodrelations/v1#N-Ary-Relations"
+    },
+    "closes" : {
+      "@id" : "http://purl.org/goodrelations/v1#closes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "offers" : {
+      "@id" : "http://purl.org/goodrelations/v1#offers",
+      "@type" : "@id"
+    },
+    "isConsumableFor" : {
+      "@id" : "http://purl.org/goodrelations/v1#isConsumableFor",
+      "@type" : "@id"
+    }
+  }
+}
